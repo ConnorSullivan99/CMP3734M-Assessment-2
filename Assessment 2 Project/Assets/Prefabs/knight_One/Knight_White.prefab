@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight_White
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60f43275b2e77a348a7552d1a11f2fb9, type: 3}
+      propertyPath: m_TagString
+      value: knight
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 60f43275b2e77a348a7552d1a11f2fb9, type: 3}
       propertyPath: m_Controller
       value: 

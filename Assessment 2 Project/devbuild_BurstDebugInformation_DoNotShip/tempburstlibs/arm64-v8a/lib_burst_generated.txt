@@ -22,6 +22,7 @@ Library: C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
 --assembly-defines=Unity.VisualScripting.Core;
 --assembly-defines=Unity.VisualScripting.Flow;
@@ -35,7 +36,6 @@ Library: C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Library\Burst
 --output=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -73,6 +73,7 @@ Library: C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 
 --assembly-defines=Unity.RenderPipeline.Universal.ShaderLibrary;
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.Universal.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
 --assembly-defines=Unity.VisualScripting.Core;
 --assembly-defines=Unity.VisualScripting.Flow;
@@ -86,7 +87,6 @@ Library: C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Temp\Burst
---debug=Full
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Library\Burst
 --output=C:\Users\Computing\Documents\GitHub\CMP3734M-Assessment-2\Assessment 2 Project\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated

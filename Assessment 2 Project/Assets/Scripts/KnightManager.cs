@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using TMPro;
 
 public class KnightManager : MonoBehaviour
 {
     public ARRaycastManager arRaycastManager;
-    public GameObject knightPrefab;
+    //public GameObject knightPrefab;
 
     private List<ARRaycastHit> arRaycastHits = new List<ARRaycastHit>();
+    [SerializeField]
+    TextMeshProUGUI scoreText;
+    public static int score;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreText = GameObject.FindGameObjectWithTag("ScoreValue").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -22,37 +26,29 @@ public class KnightManager : MonoBehaviour
         if (Input.touchCount > 0)
         {
             var touch = Input.GetTouch(0);
+            scoreText.text = "Score: " + score;
             if (touch.phase == TouchPhase.Ended)
             {
                 if (Input.touchCount == 1)
                 {
-                    if (arRaycastManager.Raycast(touch.position, arRaycastHits))
-                    {
-                        var pose = arRaycastHits[0].pose;
-                        CreateKnight(pose.position);
-                        return;
-                    }
 
                     Ray ray = Camera.main.ScreenPointToRay(touch.position);
 
                     if (Physics.Raycast(ray, out RaycastHit hit))
                     {
-                        if (hit.collider.tag == "knight")
+                        if (hit.collider.tag == "Collectable")
                         {
-                            DeleteKnight(hit.collider.gameObject);
+                            DeleteItem(hit.collider.gameObject);
                         }
                     }
                 }
             }
         }
     }
-    private void CreateKnight(Vector3 position)
-    {
-        Instantiate(knightPrefab, position, Quaternion.identity);
-    }
 
-    private void DeleteKnight(GameObject knightObject)
+    private void DeleteItem(GameObject Object)
     {
-        Destroy(knightObject);
+        //Object.SetActive(false);
+        score++;
     }
 }
